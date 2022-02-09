@@ -1,0 +1,33 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'spec/**/*'
+    - 'bin/{rails,rake,bundle}'
+    - 'vendor/bundle/**/*'
+
+require: 
+  - rubocop-rails
+  - rubocop-rspec
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+Metrics/MethodLength:
+  Max: 11
+
+Metrics/PerceivedComplexity:
+  Max: 10
+
+Metrics/AbcSize: 
+  Max: 25
+
+Metrics/ClassLength:
+  Max: 150
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
